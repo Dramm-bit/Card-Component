@@ -1,0 +1,142 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    min-height: 100vh;
+    background: #0A0C1B;
+  }
+
+.card{
+
+width: 1110px;
+height: 444px;
+display: flex;
+flex-direction: row-reverse;
+
+
+/* (card background) */
+
+background: #1B1938;
+border-radius: 10px;
+}
+
+.card__img-container{
+    position: relative;
+}
+
+.card__img-container-filter{
+
+    position: absolute;
+    width: 540px;
+    height: 446px;
+    
+    
+    background: rgba(81, 11, 104, 0.55);
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+.card__img-container__desktop{   
+border-radius: 0px 10px 10px 0px;
+
+}
+
+.card__text {
+display: flex;
+flex-direction: column;
+
+
+padding: 70px 115px 192px 71px;
+/* margin-right: 115px;
+margin-left: 71px;
+margin-top: 70px;
+margin-bottom: 192px; */
+
+
+}
+
+.card__text__title{
+    width: 382px;
+    height: 86px;
+ 
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35.9px;
+    line-height: 43px;
+    letter-spacing: 0.001em;
+    
+    
+    
+    color: #FFFFFF;
+}
+.card__text__title--purple{
+  color:rgba(170, 92, 219, 1)
+}
+.card__text__paragraph{
+width: 354px;
+
+padding: 30px 0px 77px 0px;
+
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: 0.001em;
+opacity:65%;
+/* main paragraph */
+
+color: rgba(255, 255, 255);
+}
+
+
+.data__text{
+    display: flex;
+    justify-content:space-between;
+    width: 361px;
+    height: 53px;
+
+    
+}
+
+.style--data--title{
+width: 60px;
+height: 30px;
+
+
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 24.5951px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+.style--data--paragraph {
+width: 94px;
+height: 17px;
+
+
+font-family: 'Lexend Deca', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 13.3327px;
+line-height: 17px;
+opacity: 65%;
+
+
+
+
+color: rgba(255, 255, 255, 0.65);
+}
