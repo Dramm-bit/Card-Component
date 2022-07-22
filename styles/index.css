@@ -8,12 +8,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    
+
     min-height: 100vh;
     background: #0A0C1B;
+    
   }
 
+ 
+
 .card{
+position: relative;
 
 width: 1110px;
 height: 444px;
@@ -27,29 +32,33 @@ background: #1B1938;
 border-radius: 10px;
 }
 
-.card__img-container{
-    position: relative;
-}
-
-.card__img-container-filter{
-
-    position: absolute;
+.card__img-container__img{
+    
     width: 540px;
     height: 446px;
-    
-    
-    background: rgba(81, 11, 104, 0.55);
-    border-radius: 0px 10px 10px 0px;
+    background: url(resources/image-header-desktop.jpg);
+   }
 
-}
+   .card__img-container-filter{
+    position: absolute;
+   
+     width: 540px;
+     height: 446px;
+     
+     
+     background: rgba(81, 11, 104, 0.55);
+     border-radius: 0px 10px 10px 0px;
+ 
+ }
 
-.card__img-container__desktop{   
+
+.card__img-container__img{   
 border-radius: 0px 10px 10px 0px;
 
 }
 
 .card__text {
-display: flex;
+
 flex-direction: column;
 
 
@@ -139,4 +148,187 @@ opacity: 65%;
 
 
 color: rgba(255, 255, 255, 0.65);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 376px) {
+
+  body{
+   flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    min-height: 100vh;
+  }
+    
+
+.container-cards{
+    
+    width: 327px;
+    height: 780px;
+
+}
+.card{
+    
+   
+    width: 327px;
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    /* (card background) */
+    
+    background: #1B1938;
+    border-radius: 10px;
+    }
+    
+   
+    .card__img-container-filter{
+    
+        
+        width: 327px;
+        height: 240px;
+        
+        background: rgba(81, 11, 104, 0.55);
+        border-radius: 7px 7px 0px 0px;
+
+    
+    }
+    .card__img-container__img{
+      
+        width: 327px;
+        height: 240px;
+        
+        background: url(resources/image-header-mobile.jpg);
+        background-size: cover;
+       }
+    
+    
+    
+    .card__img-container__img{   
+        border-radius: 7px 7px 0px 0px;
+
+    
+    }
+    
+    .card__text {
+       display: flex;
+       width: 327px;
+       height: 780px;
+   
+
+    
+        flex-direction: column;
+        align-items: center;
+   
+    
+   /*  padding: 38px 115px 192px 71px; */
+    /* margin-right: 115px;
+    margin-left: 71px;
+    margin-top: 70px;
+    margin-bottom: 192px; */
+    
+    
+    }
+    
+    .card__text__title{
+        width: 256px;
+        height: 95px;
+        margin-left: 43px;
+     
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27.5611px;
+        line-height: 33px;
+        text-align: center;
+        
+        
+        color: #FFFFFF;
+    }
+    .card__text__title--purple{
+      color:rgba(170, 92, 219, 1)
+    }
+    .card__text__paragraph{
+        width: 258px;
+        height: 94px;
+        margin-left: 50px;
+       
+    padding: 24px 0px 43px 0px;
+    
+    font-family: 'Inter', sans-serif;
+   font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 0.001em;
+    opacity:65%;
+    /* main paragraph */
+    
+    color: rgba(255, 255, 255);
+    }
+    
+   
+    .data__text{
+        margin-top: 43px;
+        display: flex;
+        flex-direction: column;
+        
+        margin-left: 64px;
+        width: 84px;
+        height: 211.96px;   
+        
+    }
+    
+    .style--data--title{
+        
+
+    width: 60px;
+    height: 30px;
+    margin: 0px 11px 0px 13px;
+    
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24.5951px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    }
+    
+    .style--data--paragraph {
+    width: 94px;
+    height: 17px;
+    
+    
+    font-family: 'Lexend Deca', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.3327px;
+    line-height: 17px;
+    opacity: 65%;
+    
+    
+    
+    
+    color: rgba(255, 255, 255, 0.65);
+    }
+   }
+.style--data--paragraph--query{
+    margin-left:10px;
 }
