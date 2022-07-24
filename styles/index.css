@@ -13,6 +13,7 @@
     height: 100vh;
 
     background-color: rgba(10, 12, 27, 1);
+
 }
 
 .card {
@@ -49,25 +50,26 @@
 }
 
 .card__text-container {
+
     display: flex;
     flex-direction: column;
-    
 
-    padding: 70px 71px 62px 115px;
+
     width: 570px;
     height: 312px;
+
+    padding: 70px 71px 375px 115px;
 }
 
 .card__title {
-
     width: 384px;
+
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 35.9px;
     line-height: 43px;
     letter-spacing: 0.001em;
-
     color: #FFFFFF;
 }
 
@@ -78,8 +80,8 @@
 
 .card__paragraph {
 
-    width: 354px;
-    
+    width: 258px;
+
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -88,38 +90,96 @@
     letter-spacing: 0.001em;
     opacity: 75%;
     padding: 30px 0px 77px 0px;
-    /* main paragraph */
-
     color: rgba(255, 255, 255);
 
 }
 
 .stats {
     display: flex;
-    
+
     justify-content: space-between;
     margin-right: 40px;
 
 }
 
 .stat-font--title {
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24.5951px;
     line-height: 30px;
-
-
-
     color: #FFFFFF;
 }
 
-.stat-font--description{
+.stat-font--description {
     font-family: 'Lexend Deca', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 13.3327px;
-line-height: 17px;
-opacity: 65%;
-color: rgba(255, 255, 255);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.3327px;
+    line-height: 17px;
+    opacity: 65%;
+    color: rgba(255, 255, 255);
+}
+
+@media screen and (max-width:376px) {
+
+
+
+    .card {
+        flex-direction: column;
+
+        width: 327px;
+        height: 780px;
+    }
+
+    .card__filter-card {
+        width: 327px;
+        height: 240px;
+
+        border-radius: 7px 7px 0px 0px;
+    }
+
+    .card__img {
+        width: 100%;
+        height: 240px;
+
+        background: url('../resources/image-header-mobile.jpg');
+        background-size: cover;
+        border-radius: 7px 7px 0px 0px;
+
+
+    }
+
+    .card__text-container {
+        align-items: center;
+        width: 327px;
+        height: 211.96px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .card__title {
+        width: 318px;
+        font-size: 27.5611px;
+        line-height: 33px;
+        text-align: center;
+        padding: 39px 35px 23px 36px;
+
+    }
+
+    .card__paragraph {
+
+        padding-bottom: 43px;
+        text-align: center;
+        letter-spacing: 0.001em;
+    }
+
+    .stats {
+
+        flex-direction: column;
+        margin: 0px;
+
+        text-align: center;
+        gap: 27px;
+    }
 }
